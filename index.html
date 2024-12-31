@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rodney Gordon Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      display: flex;
+    }
+
+    .sidebar {
+      width: 25%;
+      background-color: #f9f9f9;
+      padding: 20px;
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .sidebar h1 {
+      font-size: 1.5em;
+      margin-bottom: 1em;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar li {
+      margin-bottom: 10px;
+    }
+
+    .main {
+      width: 75%;
+      padding: 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .grid img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h1>Rodney Gordon</h1>
+    <ul>
+      <li>Midas</li>
+      <li>Dicey</li>
+      <li>...and more</li>
+    </ul>
+    <p>Contact</p>
+  </div>
+  <div class="main">
+    <div class="grid">
+      <img src="image1.jpg" alt="Project 1">
+      <img src="image2.jpg" alt="Project 2">
+    </div>
+  </div>
+</body>
+</html>
