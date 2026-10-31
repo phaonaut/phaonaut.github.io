@@ -3,67 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rodney Gordon Portfolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      display: flex;
-    }
-
-    .sidebar {
-      width: 25%;
-      background-color: #f9f9f9;
-      padding: 20px;
-      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-    }
-
-    .sidebar h1 {
-      font-size: 1.5em;
-      margin-bottom: 1em;
-    }
-
-    .sidebar ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    .sidebar li {
-      margin-bottom: 10px;
-    }
-
-    .main {
-      width: 75%;
-      padding: 20px;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-    }
-
-    .grid img {
-      width: 100%;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-  </style>
+  <title>Rodney Gordon</title>
+  <meta name="description" content="Portfolio of Rodney Gordon: web projects and graphic design.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="sidebar">
-    <h1>Rodney Gordon</h1>
-    <ul>
-      <li>Midas</li>
-      <li>Dicey</li>
-      <li>...in progress working on moving everyhing over.</li>
-    </ul>
-    <p>Contact</p>
-  </div>
-  <div class="main">
-    <div class="grid">
-      <img src="https://cdn.myportfolio.com/ea06ca30382e2282252aa9758ae5522a/823ebc52-eb35-4eeb-9c84-28e0fd723446_rw_1920.jpg?h=1ba439a2cc3b4e6b6b1f01970dcb9d8b" data-pin-nopin="true">
+  <aside class="sidebar">
+    <a class="logo" href="#">Rodney<br>Gordon</a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="nav">Projects</button>
+    <nav id="nav">
+      <!-- Filled in by js/app.js from js/projects.js -->
+    </nav>
+    <div class="contact">
+      <h2>Contact</h2>
+      <ul class="social">
+        <li><a href="https://github.com/phaonaut" aria-label="GitHub" title="GitHub">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a></li>
+        <li><a href="https://gitlab.com/phaonaut" aria-label="GitLab" title="GitLab">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.6 9.6 23.57 9.5l-3.27-8.52a.85.85 0 0 0-1.62.06l-2.2 6.75H7.52L5.31 1.04a.85.85 0 0 0-1.62-.06L.43 9.5l-.03.09a6.07 6.07 0 0 0 2.01 7.01l.01.01.03.02 4.97 3.73 2.46 1.86 1.5 1.13a1 1 0 0 0 1.22 0l1.5-1.13 2.46-1.86 5-3.75.01-.01a6.07 6.07 0 0 0 2.02-7z"/></svg></a></li>
+        <li><a class="behance" href="https://www.behance.net/rodneygordon" aria-label="Behance" title="Behance">Bē</a></li>
+      </ul>
     </div>
+  </aside>
+
+  <main id="main" tabindex="-1">
+    <!-- Home grid or a project page, rendered by js/app.js -->
+  </main>
+
+  <div class="lightbox" hidden>
+    <button class="lb-close" aria-label="Close">&times;</button>
+    <button class="lb-prev" aria-label="Previous image">&#8249;</button>
+    <img alt="">
+    <button class="lb-next" aria-label="Next image">&#8250;</button>
   </div>
+
+  <script src="js/projects.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
